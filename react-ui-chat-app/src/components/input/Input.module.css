@@ -1,0 +1,33 @@
+.wrapper{
+    border: 1px solid #BEBCC6;
+    border-radius: 4px;
+    padding: 0.5rem 0.5rem;
+    background: #FFFFFF;
+    cursor: text;
+    display: flex;
+    align-items: center;
+
+}
+
+.wrapper:has(> input:focus){
+    border-color: #333;
+}
+
+.input {
+    outline: none;
+    cursor: inherit;
+    background: none;
+    border: none;
+    font: inherit;
+    font-size: 1rem;
+}
+
+.prefix{
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+.suffix{
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}

@@ -1,0 +1,85 @@
+.root {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #ccc;
+    position: relative;
+}
+
+.chatRow {
+    display: flex;
+    padding: 0 15px;
+    margin: 10px 0;
+}
+
+.avatar {
+    align-self: flex-end;
+    position: relative;
+    bottom: 10px;
+}
+
+.content {
+    max-width: 80%;
+}
+
+.msg {
+    padding: 10px 15px;
+    background: #F6F6F6;
+    border-radius: 5px 20px 20px 5px;
+    margin: 2px 0;
+}
+
+.msg .line {
+    display: block;
+}
+
+.msg:first-child {
+    border-radius: 20px 20px 20px 5px;
+}
+
+.msg:last-child {
+    border-radius: 5px 20px 20px 20px;
+}
+
+.msg:first-child:last-child {
+    border-radius: 20px;
+}
+
+/* self */
+.self {
+    justify-content: flex-end;
+}
+
+.self .msg {
+    background: #727BFE;
+    color: #FFFFFF;
+    border-radius: 20px 5px 5px 20px;
+}
+
+.self .msg:first-child {
+    border-radius: 20px 20px 5px 20px;
+}
+
+.self .msg:last-child {
+    border-radius: 20px 5px 20px 20px;
+}
+
+.self .msg:first-child:last-child {
+    border-radius: 20px;
+}
+/* end self */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: all;
+    user-select: none;
+    z-index: 999;
+}

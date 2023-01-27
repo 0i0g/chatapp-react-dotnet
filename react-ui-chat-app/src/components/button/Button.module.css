@@ -1,0 +1,16 @@
+.button {
+    background: none;
+    border: none;
+    outline: none;
+    display: inline-flex;
+    gap: 5px;
+    vertical-align: center;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    background-color: red;
+}
